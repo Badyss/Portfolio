@@ -1,0 +1,275 @@
+body {
+    background-color: #FDFBF9;
+}
+
+.desktop{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left:-450px;
+    justify-content: center;
+    font-weight: 300;
+    font-family: 'Catamaran', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section button{
+    text-align: center;
+    color:white;
+    padding:20px 40px;
+    background-color: #38b6ff;
+    border-radius:10px;
+    font-size:22px;
+    border:none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+section button:hover{
+    color:black;
+}
+
+main div {
+    height: 100%;
+    position: relative;
+}
+
+main .animation img {
+    z-index: 1;
+}
+
+main .animation div {
+    position: absolute;
+    z-index: -1;
+    left: 380px;
+    height: 4px;
+    width: 0px; 
+    background-color: #AABAFD;
+    color: white;
+    text-align: center; 
+}
+
+main .animation span {
+    position: relative;
+    display: block;
+    margin-top: -30px; 
+    font-size:20px;
+    margin-left:-400px;
+}
+
+#admin {
+    bottom: 230px;
+    animation: appearAnimation 2s ease-out forwards;
+}
+
+@keyframes appearAnimation {
+    to {
+        width: 920px;
+        color: black;
+    }
+}
+
+.logos div {
+    display: flex;
+    bottom:17px;
+}
+
+.logos img {
+    width:85px;
+    height:85px;
+    opacity: 0;
+    border-radius:50%;
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    transform: translateX(-20px);
+}
+
+#img1 {
+    left:270px;
+    animation: showIcon 0.4s ease-in-out 0.4s forwards;
+} 
+
+#img2 {
+   left:400px;
+   animation: showIcon 0.4s ease-in-out 0.5s forwards;
+}
+
+#img3 {
+    left:500px;
+    animation: showIcon 0.4s ease-in-out 0.8s forwards;
+} 
+
+#img4 {
+    left:600px;
+    animation: showIcon 0.4s ease-in-out 1s forwards;
+    background-color: black;
+} 
+
+#img5 {
+    left:720px;
+    animation: showIcon 0.4s ease-in-out 1.4s forwards;
+}
+
+.logos span{
+    opacity: 0;
+    position: absolute;
+    text-align: justify;
+    height:190px;
+    width:540px;
+    padding:20px;
+    font-size: 20px;
+    left: 0;
+    backdrop-filter: blur(3px);
+}
+
+.logos span a {
+    text-decoration: none;
+    color: #38b6ff;
+    font-weight: 420;
+}
+
+.logos .text{
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.logos .logo-container:hover .text {
+    opacity: 1;
+}
+.logos img:hover + .text {
+    opacity: 1;
+}
+
+.logos .text {
+    top: 200px;
+}
+
+@keyframes showIcon {
+    to {
+        opacity: 1;
+        transform: translateX(40px);
+    }
+}
+
+main {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.phone {
+    margin:100px 0;
+    display: none;
+}
+
+.phone h3{
+    text-align: center;
+    border-bottom: 2px solid #0099e5;
+    padding-bottom:10px;
+}
+
+.phone ul li {
+    list-style-type: none;
+    color:rgb(105, 105, 105);
+    position: relative;
+    padding-left:10px;
+    text-align: justify;
+}
+
+.oui {
+    content:'';
+    position: absolute;
+    border:2px solid #0099e5;
+    height:8px;
+    width:8px;
+    top:6px;
+    left:-10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+main .skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .skill {
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index:2;
+    width:40%;
+    border-radius: 5px;
+}
+
+main .imgskill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+main .imgskill img {
+    width:70px;
+    height:70px;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 5px black;
+}
+
+@media only screen and (max-width: 1300px) {
+    .animation {
+        display: none;
+    }
+    .logos img{
+        display: none;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }      
+    .desktop {
+        display: none;
+    }
+    .phone {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 956px) {
+    main .skills{
+        display: block;
+
+    }
+    .phone h3{
+        font-size: 24px;
+    }
+    main .imgskill img {
+        width:90px;
+        height:90px;
+    }
+    .phone ul li {
+        font-size:20px;
+        margin-right:20px;
+    }
+    .oui {
+        top:8px;
+        height:10px;
+        width:10px;
+        border-radius:50%;
+    }
+    main .skill {
+        width:90%;
+        padding:5%;
+    }
+
+}

@@ -1,0 +1,335 @@
+body {
+    background-color: #FDFBF9;
+    position: relative;
+}
+
+main {
+    display: flex;
+}
+
+main .main-content {
+    width:50.5%;
+    margin:0% 10%;
+    margin-top:-40px;
+}
+
+main .presentation{
+    width:100%;
+    padding-bottom:40px;
+    position: relative;
+    backdrop-filter: blur(5px);
+    border-bottom:2px solid #0099e5
+}
+
+.barprojet {
+    position: absolute;
+    height:12px;
+    width:80%;
+    background-color: #0099e5;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+main .presentation h1{
+   padding-top:20px;
+    text-align: center;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-style: normal;
+    font-size:24px;
+    font-weight: 600;
+}
+
+
+
+
+
+main .main-content div:nth-child(1) .text{
+    margin:0 10%;
+    font-size:15px;
+    text-align: justify;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+main .main-content div:nth-child(1) a span{
+    font-family: "Poppins", Helvetica, sans-serif;
+    border-bottom: 2px solid #0099e5;
+    display: inline-block;
+    font-size:16px;
+    margin-right:3px;
+    font-weight: 500;
+}
+
+main .slider {
+    padding-top:15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+main .slider #mainWallpaper {
+    width:80%;
+    height:80%;
+    object-fit: contain;
+    padding-bottom:30px;
+    border-bottom:2px solid #0099e5
+}
+
+main .slider div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom:40px;
+    opacity: 0;
+}
+
+main .slider div:hover{
+    opacity: 1;
+}
+
+main .slider div img {
+    width:12%;
+    margin:0 7px;
+    opacity: 0.6;
+    transition: 0.2s;
+    cursor:pointer;
+}
+
+main .slider div img:hover{
+    opacity: 1;
+}
+
+main .slider #mainWallpaper:hover ~ div {
+    opacity: 1;
+}
+
+main .advise {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    position:relative;
+}
+
+main .advise .extend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .advise div img {
+    width:43px;
+    margin-left:20px;
+}
+
+main .advise div img:hover{
+    filter: invert(20%);
+}
+
+main .advise button{
+    background-color: #0099e5;
+    border: none;
+    padding:20px;
+    cursor:pointer;
+    border-radius:5px;
+    color:white;
+    font-weight:500;
+    font-family: "Poppins", Helvetica, sans-serif;
+} 
+
+main .advise button:hover{
+    background-color: #028dd3;
+}
+
+main .advise input {
+    height:55px;
+    width:250px;
+    margin-right:15px;
+    text-align: center;
+    border:none;
+    border-bottom:1px solid grey;
+    background-color: rgba(128, 128, 128, 0.199);
+    border-radius:3px;
+    transition:0.2s;
+}
+
+main .advise input:focus {
+    border-color:#0099e5;
+    outline: none;
+}
+
+.message{
+    position: absolute;
+    display: none;
+    font-size:20px;
+    color:green;
+    bottom:-20px;
+}
+
+/* ASIDE */
+/* ASIDE */
+/* ASIDE */
+
+.aside {
+    width:25%;
+}
+
+main div:nth-child(2) .side{
+    width:100%;
+    margin-right:30px;
+
+}
+
+main .unside h1{
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-style: normal;
+    font-size:20px;
+    font-weight: 600;
+    border-bottom: 2px solid #0099e5;
+    display: inline-block;
+}
+
+main .side div ul {
+    padding:0;
+}
+
+main .side div li {
+    list-style-type: none;
+    position: relative;
+    font-family: "Poppins", Helvetica, sans-serif;
+    margin:6px 0;
+    margin-left:20px;
+    font-weight: 400;
+}
+
+.side .unside{
+    margin-bottom:30px;
+    height: 25vh;
+    width:100%;
+    padding-bottom:20px;
+}
+
+.side .unside:nth-child(3){
+    padding-bottom: 0;
+}
+
+main .unside a {
+    color: black;
+    text-decoration: none;
+}
+
+main .unside a:hover {
+    color:#0099e5
+}
+
+.oui {
+    content:'';
+    position: absolute;
+    left:-20px;
+    top:8px;
+    border:2px solid #0099e5;
+    height:6px;
+    width:6px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.titlepres {
+    display: none;
+}
+
+.return {
+    position: absolute;
+    left:80px;
+    top:30px;
+    width:60px;
+    transform: scaleX(-1);
+    cursor:pointer;
+    border-radius:10px;
+    transition: 0.2s;
+}
+
+.return:hover{
+    transform: scaleX(-1);
+    background-color: #0099e5;
+}
+
+
+
+@media only screen and (max-width: 1284px) {
+    main {
+        display: block;
+    }
+    main .main-content {
+        margin:0;
+        width:100%;
+    }
+    .aside {
+        width:100%;
+        padding-bottom:280px;
+    }
+    .aside .side{
+        display: flex;
+        justify-content: center;
+    }
+    .unside {
+        margin:20px;
+    }
+    main .unside h1 {
+        text-align: center;
+        height:70px;
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .presentation img {
+        display: none;
+    }
+    main .presentation {
+        padding-top:80px;
+    }
+
+    .presentation a {
+        font-size:20px;
+    }
+    main .unside h1 {
+        text-align: left;
+    }
+    main div:nth-child(2) .side {
+        display: block;
+    }
+    form {
+        display: none;
+    }
+    main .advise{
+        display: flex;
+        justify-content: center;
+    }
+    main .advise button{
+        width: 200px;
+    }
+    .unside {
+        margin:0px;
+    }
+    .aside {
+        padding-bottom:100px;
+    }
+    .side .unside {
+        width:90%;
+        margin-left:40px;
+    }
+    main .slider #mainWallpaper {
+        width:100%;
+    }
+    main .slider div img {
+        width:20%;
+    }
+    main .unside h1 {
+        height:40px;
+    }
+    .return {
+        display: none;
+    }
+}

@@ -1,0 +1,232 @@
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: #FDFBF9;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend', sans-serif;
+}
+
+section img {
+    height:22px;
+    width:22px;
+    filter:invert(40%)
+}
+
+section a{
+    color:grey;
+    display: flex;
+    align-items: center;
+    font-size:14px;
+}
+
+
+section a:hover,
+section a:hover img{
+    color:black;
+    filter:invert(0%)
+}
+section p {
+    margin:15px;
+}
+
+main {
+    margin-top:70px;
+    display: flex;
+    justify-content: center;
+}
+
+main .lastprojet  {
+    display: block;
+    background-color: #38b6ff;
+    background:url('../logos/espback.png');
+    background-position: center;
+    height:424px;
+    width:300px;
+    padding:40px;
+    position: relative;
+    color:white;
+    border-radius: 3px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.264);
+}
+
+.lastprojet div:nth-child(1) {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:20px;
+}
+
+.lastprojet div:nth-child(1) h1{
+    font-size:14px;
+    margin-right:8px;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+.lastprojet div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40%;
+}
+
+.lastprojet div:nth-child(2) img{
+    border-radius: 10%;
+    width:130px;
+    height:130px;
+    object-fit: cover;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.664);
+}
+
+.lastprojet div:nth-child(3) h1{
+    margin:0;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.lastprojet div:nth-child(3) p {
+    text-align: center;
+    margin-top:50px;
+}
+
+.lastprojet div:nth-child(3) a {
+    text-decoration: none;
+    color:white;
+    padding:7px 30px;
+    border:1.5px solid white;
+    transition: 0.2s;
+}
+
+.lastprojet div:nth-child(3) a:hover {
+    border:1.5px solid black;
+    color:black;    
+} 
+
+/* DROITE */
+/* MAIN PROJECTS */
+
+main:nth-child(2) {
+    display: block;
+}
+
+.mainprojets {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mainprojets .projet {
+    height:228px;
+    width:192px;
+    margin-top:0;
+    margin-left:24px;
+    margin-bottom:24px;
+    padding:6px;
+    padding-left:20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.514);
+}
+
+.projet {
+    position: relative
+}
+
+.projet h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.projet a {
+    font-weight: 750;
+    letter-spacing: 1px;
+    color:rgb(49, 49, 49);
+    font-size:13px;
+    font-family: 'Lexend', sans-serif;
+    text-decoration: none;
+    padding-bottom:2px;
+    border-bottom: 2px solid grey;
+}
+
+.projet a:hover {
+    color:#38b6ff;
+    border-bottom: 2px solid #38b6ff;
+}
+
+.projet div:nth-child(1) {
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    height:40%;
+}
+
+.mainprojets img{
+    width:60px;
+    height:60px;
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:10px;
+    width:100%;
+}
+
+#bottom1{
+    background-color: #FD5959;
+}
+#bottom2{
+    background-color: #7738C8;
+}
+#bottom3{
+    background-color: #E36415;
+}
+#bottom4{
+    background-color: #D7D0D6;
+}
+
+.date {
+    position: absolute;
+    text-align: right;
+    font-family: 'Lexend', sans-serif;
+    font-size:14px;
+    top:5px;
+    right:5px;
+}
+
+
+@media only screen and (max-width: 874px) {
+    body {
+        position: relative;
+    }
+    main {
+        display: block;
+        margin-top:0;
+    }
+    main .lastprojet{
+        width:100%;
+        padding:0;
+        border-radius: 0;
+    }
+    .mainprojets {
+        display: flex;
+        justify-content: center;
+        margin-top:30px;
+    }
+    .mainprojets .projet {
+        width:40%;
+        margin: 0  5px
+    }
+    section a {
+        margin-top:30px;
+        font-size:18px;
+        padding-bottom:100px;
+    }
+}
