@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/experiences.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <link rel="icon" href="logos/head.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+
+    <title>Badyss AZZ</title>
+</head>
+<body>
+    <nav>
+        <navbar>
+          <ul>
+              <a href="index.html"><li>ACCEUIL</li></a>
+              <a class="dropdown">
+                  <div >
+                      <li>PARCOURS </li>
+                      <img src="logos/angle.png">
+                      <ul class="dropdown-menu">
+                          <li onclick="redirect('experiences')">Expériences</li>
+                          <li onclick="redirect('competences')">Compétences</li>
+                          <li onclick="redirect('projets')">Projets</li>
+                      </ul>
+                  </div>
+              </a>
+              <a href="contact.html"><li>CONTACT</li></a>
+          </ul>
+        </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="index.html">ACCEUIL</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">PARCOURS</a>
+                <ul class="dropdown-menu">
+                    <li onclick="redirect('experiences')">Expériences</li>
+                    <li onclick="redirect('competences')">Compétences</li>
+                    <li onclick="redirect('projets')">Projets</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        <span id="loading"></span>
+    </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+    </div>
+    <main>
+        <div class="experiences">
+            <main class="row">
+                <section class="col">
+                    <header class="title">
+                        <h2>Scolarité</h2>
+                    </header>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2022-2025</h4>
+                            <h3>BUT Réseaux & Télécom <span>Université Sorbonne Paris Nord</span></h3>
+                            <ul>
+                                <li>Parcours cybersécurité</li>
+                                <li>Acquisition de compétences permettant de créer des outils et applications numériques, administrer les réseaux & l'internet et surveiller un
+                                    système d'information sécurisé.
+                                </li>
+                                <li>7ème de la promotion</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h4>2022</h4>
+                            <h3>Bac Général <span>Lycée Louis Jouvet</span></h3>
+                            <ul>
+                                <li>Spécialités Sciences de l'ingénieur et Mathématiques</li>
+                                <li>Mension assez bien avec 18 en Sciences de l'ingénieur</li>
+                            </ul>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col">
+                    <header class="title">
+                        <h2>Expériences</h2>
+                    </header>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2023 - Actuellement</h4>
+                            <h3>Vendeur Multimédia <span> CDI - Auchan</span></h3>
+                            <ul>
+                                <li>Acceuil et conseils auprès de la clientèle dans leurs achats ( Ordinateurs, téléphones, Électroménager)</li>
+                                <li>Utilisations d’outils numériques (bon d’achats, forfaits mobiles..)</li>
+                                <li>Organisation des rayons</li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h4>2023</h4>
+                            <h3>Développeur web <span> Freelance</span></h3>
+                            <ul>
+                                <li>Créations de sites webs vitrines ou personnels.</li>
+                                <li>Réalisation du Front-end & Back-end (Aspect technique, boutons, formulaires..)</li>
+                                <li>Site : <a href="https://www.websiteisfy.fr" target="_blank" >websiteisfy.fr</a></li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h4>2022-2023</h4>
+                            <h3>Accompagnateur aide aux devoirs <span> Mairie de Taverny</span></h3>
+                            <ul>
+                                <li>Elaboration d’un programme d’activités de loisirs ludiques à destination d’enfants âgés de 6 à 16 ans.</li>
+                                <li>Animation d’ateliers manuels (peinture, construction..)</li>
+                                <li>Accompagnement aux sorties culturelles et évènements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>       
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+    </footer>
+    <script src="css/java.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+</html>

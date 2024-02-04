@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/inprojet.css" rel="stylesheet"/>
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="../logos/head.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/catamaran" rel="stylesheet">
+    <link rel='stylesheet' id='kerge-google-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;display=swap' rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+
+    <title>Badyss - Library</title>
+</head>
+<body>
+    <nav>
+        <navbar>
+            <ul>
+                <a href="../index.html"><li>ACCEUIL</li></a>
+                <a class="dropdown">
+                    <div >
+                        <li>PARCOURS </li>
+                        <img src="../logos/angle.png">
+                        <ul class="dropdown-menu">
+                            <li onclick="redirect('../experiences')">Expériences</li>
+                            <li onclick="redirect('../competences')">Compétences</li>
+                            <li onclick="redirect('../projets')">Projets</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="../contact.html"><li>CONTACT</li></a>
+            </ul>
+        </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="../index.html">ACCEUIL</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">PARCOURS</a>
+                <ul class="dropdown-menu">
+                    <li onclick="redirect('../experiences')">Expériences</li>
+                    <li onclick="redirect('../competences')">Compétences</li>
+                    <li onclick="redirect('../projets')">Projets</li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        <span id="loading"></span>
+    </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+    </div>
+    <a href="../projets.html"><img src="../logos/arrow.png" class="return"></a>
+    <main>
+        <div class="main-content">
+            <div class="presentation">
+                <div class="barprojet"></div>
+                <h1>Bibliothèque</h1>
+                <div class="text">
+                <a> 
+                <span>Objectif : </span>
+                Développement d'un programme visant à créer et gérer une bibliothèque en utilisant Python.
+                <br><br><span>Fonctionnalitées : </span>
+                Création de Genres/Livres et affichage clair de l'historique des commandes. Implémentation habile du chargement/sauvegarde d'objets dans un fichier JSON pour
+                assurer la persistance des données. Perfectionnement de la gestion des erreurs pour garantir une expérience utilisateur fiable et sans faille.
+                </a>
+                </div>
+            </div>
+            <div class="slider">
+                <img id="mainWallpaper" src="../logos/biblio1.png">
+                <div>
+                    <img onclick="changeWallpaper('../logos/biblio1.png')" src="../logos/biblio1.png" id="1">
+                    <img onclick="changeWallpaper('../logos/biblio2.png')" src="../logos/biblio2.png" id="2">
+                    <img onclick="changeWallpaper('../logos/biblio3.png')" src="../logos/biblio3.png" id="3">
+                    <img onclick="changeWallpaper('../logos/biblio4.png')" src="../logos/biblio4.png" id="4">
+                </div>
+            </div>
+            <div class="advise">
+                <div class="message">Message envoyé avec succès</div>
+                <div class="extend">
+                    <a href="../pdf/AZZOUZ_Badyss_Library.zip" target="_blank"><button>Télécharger le projet</button></a>
+                    <a href="https://github.com/Badyss?tab=repositories" target="_blank"><img src="../logos/github.png"></a>
+                </div>
+                <form action="?display=block" method="post">
+                    <input type="hidden" name="source" value="Library.html">
+                    <input type="text" name="avis" placeholder="Donnez moi votre avis !">
+                    <button type="submit">Envoyer</button>
+                </form>                
+            </div>
+        </div>
+        <div class="aside">
+            <div class="side">
+                <div class="unside">
+                    <h1>Contexte</h1>
+                    <ul>
+                        <li><div class="oui"></div>Projet scolaire</li>
+                        <li><div class="oui"></div>Individuel par Badyss AZZOUZ</li>
+                        <li><div class="oui"></div>Temps passé : 40 heures</li>
+                        <li><div class="oui"></div>Note obtenue : 18.5/20</li>
+                        <li><div class="oui"></div>Réalisé en Décembre 2022</li>
+                    </ul>
+                </div>
+                <div class="unside">
+                    <h1>Compétences acquises</h1>
+                    <ul>
+                        <li><div class="oui"></div>Programmation Python </li>
+                        <li><div class="oui"></div>Gestion de base de données</li>
+                        <li><div class="oui"></div>Planification et conception du programme</li>
+                        <li><div class="oui"></div>Résolution de problèmes</li>
+                        <li><div class="oui"></div>L'Autonomie et la flexibilité</li>
+                    </ul>
+                </div>
+                <div class="unside">
+                    <h1>Autres projets</h1>
+                    <ul>
+                        <li><div class="oui"></div><a href="Esplaboratory.html">Réaliser une application communicante</a></li>
+                        <li><div class="oui"></div><a href="Pentesting.html">Pentesting sur des machines Linux et Windows</a></li>
+                        <li><div class="oui"></div><a href="LANNetwork.html">Configuration d'un Réseau LAN</a></li>
+                        <li><div class="oui"></div><a href="MiTM.html">Attaque MiTM avec Scapy (Python)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer>
+    <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+</footer>
+</body>
+<script src="../css/java.js"></script>
+
+        

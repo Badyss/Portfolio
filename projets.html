@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/projets.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <link rel="icon" href="logos/head.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+
+    
+    <title>Badyss AZZ - Projets</title>
+</head>
+<body>
+    <nav>
+        <navbar>
+            <ul>
+                <a href="index.html"><li>ACCEUIL</li></a>
+                <a class="dropdown">
+                    <div >
+                        <li>PARCOURS </li>
+                        <img src="logos/angle.png">
+                        <ul class="dropdown-menu">
+                            <li onclick="redirect('experiences')">Expériences</li>
+                            <li onclick="redirect('competences')">Compétences</li>
+                            <li onclick="redirect('projets')">Projets</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+        </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="index.html">ACCEUIL</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">PARCOURS</a>
+                <ul class="dropdown-menu">
+                    <li onclick="redirect('experiences')">Expériences</li>
+                    <li onclick="redirect('competences')">Compétences</li>
+                    <li onclick="redirect('projets')">Projets</li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        <span id="loading"></span>
+    </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+    </div>
+    <main>
+        <div class="lastprojet">
+            <div>
+                <h1>Dernier projet</h1>
+            </div>
+            <div>
+                <img src="logos/esp.png">
+            </div>
+            <div>
+                <h1>Developpement d'une application communicante</h1>
+                <p><a href="projets/EspLaboratory.html">VOIR LE PROJET</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="mainprojets">
+                <div class="projet">
+                    <div>
+                        <img src="logos/exploit.png">
+                    </div>
+                    <h1>Pentesting</h1>
+                    <p><a href="projets/Pentesting.html">VOIR</a></p>
+                    <div class="bottom" id="bottom1"></div>
+                    <div class="date" id="date1">14/08/2023<br>CYBER</div>
+                </div>
+                <div class="projet">
+                    <div>
+                        <img src="logos/local.png">
+                    </div>
+                    <h1>Réseau LAN</h1>
+                    <p><a href="projets/LANNetwork.html">VOIR</a></p>
+                    <div class="bottom" id="bottom2"></div>
+                    <div class="date" id="date2">14/08/2023<br>NETWORK</div>
+                </div>
+            </div>
+            <div class="mainprojets">
+                <div class="projet">
+                    <div>
+                        <img src="logos/library.png">
+                    </div>
+                    <h1>Bibliothèque</h1>
+                    <p><a href="projets/Library.html">VOIR</a></p>
+                    <div class="bottom" id="bottom3"></div>
+                    <div class="date" id="date3">14/08/2023<br>PYTHON</div>
+                </div>
+                <div class="projet">
+                    <div>
+                        <img src="logos/pentest.png">
+                    </div>
+                    <h1>Man in the Middle</h1>
+                    <p><a href="projets/MiTM.html">VOIR</a></p>
+                    <div class="bottom" id="bottom4"></div>
+                    <div class="date" id="date4">14/08/2023<br>CYBER</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <a href="https://github.com/Badyss?tab=repositories" target="_blank">
+            <p>VOIR PLUS DE PROJETS</p>
+            <img src="logos/arrow.png">
+        </a>
+    </section>
+    <footer>
+        <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+    </footer>
+</body>
+<script src="css/java.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+</html>

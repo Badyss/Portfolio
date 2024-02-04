@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/contact.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <link rel="icon" href="logos/head.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+
+    <title>Badyss AZZ - Contact</title>
+</head>
+<body>
+    <nav>
+      <navbar>
+        <ul>
+            <a href="index.html"><li>ACCEUIL</li></a>
+            <a class="dropdown">
+                <div >
+                    <li>PARCOURS </li>
+                    <img src="logos/angle.png">
+                    <ul class="dropdown-menu">
+                        <li onclick="redirect('experiences')">Expériences</li>
+                        <li onclick="redirect('competences')">Compétences</li>
+                        <li onclick="redirect('projets')">Projets</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="contact.html"><li>CONTACT</li></a>
+        </ul>
+      </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+      <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="mobile-menu">
+          <li><a href="index.html">ACCEUIL</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle">PARCOURS</a>
+              <ul class="dropdown-menu">
+                  <li onclick="redirect('experiences')">Expériences</li>
+                  <li onclick="redirect('competences')">Compétences</li>
+                  <li onclick="redirect('projets')">Projets</li>
+              </ul>
+          </li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+  </nav>
+  <div class="loader">
+    <span id="loading"></span>
+  </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+        <div class="particle"><img src="logos/cyber.png"></div>
+    </div>
+    <main>
+        <div class="contact" id="contact">    
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title">Une question ?</h3>
+                <p class="text">
+                  Pour toute demande ou question, n'hésitez pas à me contacter via tout ces moyens de communications.
+                </p>
+
+                <div class="info">
+                  <div class="information">
+                    <img src="logos/email.png" class="icon" alt="" />
+                    <p>badyssaz@gmail.com</p>
+                  </div>
+                  <div class="information">
+                    <img src="logos/phone.png" class="icon" alt="" />
+                    <p>07 83 95 13 85</p>
+                  </div>
+                </div>
+                
+                <div class="social-media">
+                  <p>Réseaux</p>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/badyss-azz-0468b8265/" target="_blank">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" style="width:35px;filter:none;">
+                    </a>
+                    <a href="https://github.com/Badyss?tab=repositories" target="_blank">
+                      <img src="logos/github.png" style="width:35px;filter:none;background-color: white;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+      
+                <form action="css/contact.php" method="POST" autocomplete="off">
+                    <h3 class="title">Me contacter</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" placeholder="Nom" />
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" placeholder="Email" />
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" placeholder="Titre du message" />
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn" />
+                </form>
+                
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+    </footer>
+    <script src="css/java.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+</html>

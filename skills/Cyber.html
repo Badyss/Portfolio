@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../logos/head.png" type="image/x-icon">
+    <link href="../css/incompcyber.css" rel="stylesheet"/>
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+    
+    <title>Badyss AZZ - Cybersécurité </title>
+</head>
+<body>
+    <nav>
+        <navbar>
+            <ul>
+                <a href="../index.html"><li>ACCUEIL</li></a>
+                <a class="dropdown">
+                    <div >
+                        <li>PARCOURS </li>
+                        <img src="../logos/angle.png">
+                        <ul class="dropdown-menu">
+                            <li onclick="redirect('../experiences')">Expériences</li>
+                            <li onclick="redirect('../competences')">Compétences</li>
+                            <li onclick="redirect('../projets')">Projets</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="../contact.html"><li>CONTACT</li></a>
+            </ul>
+        </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">PARCOURS</a>
+                <ul class="dropdown-menu">
+                    <li onclick="redirect('../experiences')">Expériences</li>
+                    <li onclick="redirect('../competences')">Compétences</li>
+                    <li onclick="redirect('../projets')">Projets</li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        <span id="loading"></span>
+    </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+    </div>
+    <section>
+        <a href="../competences.html"><button>Retour</button></a>
+    </section>
+    <main class="desktop">
+        <div class="animation">
+            <img src="../logos/securite.png">
+            <div id="admin">
+                <span>Exploiter ces vulnérabilités</span>
+            </div>
+            <div id="dev">
+                <span>Repérer les vulnérabilités</span>
+            </div>
+        </div>
+        <div class="logos">
+            <div>
+                <img src="../logos/nessus.png" id="img1">
+                <span class="text">
+                    <a href="">Nessus</a> est un scanner de vulnérabilités qui identifie les faiblesses de sécurité 
+                    dans un système informatique, réseau ou application. Il peut par la suite permettre d'exploiter des vulnérabilités
+                    ou de renforcer la sécurité de ces vulnérabilités
+                </span>
+                <img src="../logos/nmap.png"id="img2">
+                <span class="text">
+                    <a href="">Nmap</a>  est un outil de découverte de réseau et de sécurité qui permet d'analyser des réseaux 
+                    informatiques en identifiant les hôtes. Il est utilisé pour la cartographie des réseaux, la vérification de sécurité, 
+                    la gestion des vulnérabilités ou alors pour savoir si une machine est filtrée ou qui contient un firewall.
+                </span>
+                <img src="../logos/kali.jpg" id="img3">
+                <span class="text">
+                    <a href="">Kali</a> est une distribution Linux spécialisée dans la sécurité informatique et les tests de pénétration.
+                    Elle offre un ensemble d'outils préinstallés dédiés à l'analyse de sécurité, la recherche de vulnérabilités
+                </span>
+                <img src="../logos/tcp.png" id="img4">
+                <span class="text">
+                    <a href="">Tcpdump</a> est un outil en ligne de commande utilisé pour capturer et analyser les paquets réseau transitant 
+                    sur un réseau informatique.Il permet aux administrateurs système et aux professionnels de la sécurité de surveiller le trafic réseau
+                </span>
+            </div>
+            <div>
+                <img src="../logos/sql.png" id="img5">
+                <span class="text2">
+                    Les <a href="">Injections SQL</a> sont une forme d'attaque informatique où des données non fiables sont injectées dans des requêtes 
+                    SQL afin de manipuler la base de données sous-jacente. On peut utiliser cette technique pour modifier une base de données ou avoir des droits admin.
+                </span>
+                <img src="../logos/metasploit.png"id="img9">
+                <span class="text2">
+                    <a href="">Metasploit</a> est un outil permettant les tests et exploits de sécurité. Il peut identifier les vulnérabilités mais il est surtout
+                    utilisé pour exploiter les données et tester la sécurité des systèmes informatiques
+                </span>
+                <img src="../logos/scapy.png" id="img10">
+                <span class="text2">
+                    <a href="">Scapy</a> est un module python permettant d'initier des paquets Réseau tel que TCP/IP. On peut l'utiliser
+                    pour réaliser des attaques de DNS Spoofing, ARP Poisoning, Man in the middle ou bien des vols de sessions/TCP reset.
+                </span>
+                <img src="../logos/john.png" id="img11">
+                <span class="text2">
+                    <a href="">Jhon the reaper</a> est un outil de craquage de mot de passe, celui-ci est utilisé pour tester la robustesse 
+                    des mots de passe en effectuant des attaques de dictionnaire et des attaques BRUT Force.
+                </span>
+                <img src="../logos/ddos.png" id="img12">
+                <span class="text2">
+                    Une attaque <a href="">DDoS</a> est utilisé pour perturber le fonctionnement normal d'un service en ligne ou d'un réseau 
+                    informatique en submergeant la cible avec un trafic réseau excessif.
+                </span>
+            </div>
+        </div>
+    </main>
+    <main class="phone">
+        <div class="skills">
+            <div class="skill">
+                <div class="imgskill">
+                    <img src="../logos/nmap.png">
+                </div>
+                <h3>Repérer les vulnérabilités</h3>
+                <ul>
+                    <li><div class="oui"></div>Utilisation du logiciel Nessus pour lancer des scans approfondis sur des machines</li>
+                    <li><div class="oui"></div>Lancement de scans nmap pour vérifier l'états de ports/service et versions de protocoles. </li>
+                    <li><div class="oui"></div>Exploitation de failles sous KaliLinux car de nombreux modules y sont initialement installés </li>
+                </ul>
+            </div>
+            <div class="skill">
+                <div class="imgskill">
+                    <img src="../logos/metasploit.png">
+                </div>
+                <h3>Exploiter ces vulnérabilités</h3>
+                <ul>
+                    <li><div class="oui"></div>Utilisation de Metasploit pour tester/vérifier les failles trouvées auparant.</li>
+                    <li><div class="oui"></div>Créations de programme Scapy (Python) pour réaliser des attaques tel que l'ARP Poisonning, DNS Spoofing, Session Reset ou encore DDOS</li>
+                    <li><div class="oui"></div>Usage du logiciel John The Reaper pour cracker des mot de passes par BRUTForce</li>
+                    <li><div class="oui"></div>Réalisations d'injections SQL sur un site pour vérifier l'intégrité d'une base de données</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+    </footer>
+</body>
+<script src="../css/java.js"></script>
+</html>

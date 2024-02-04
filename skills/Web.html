@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/incompweb.css" rel="stylesheet"/>
+    <link href="../css/navbar.css" rel="stylesheet"/>
+    <link rel="icon" href="../logos/head.png" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=League Gothic' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/kollektif" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow%20Condensed%3A400%2C%7CBarlow%20Semi%20Condensed%3A500%2C%7CPlayfair%20Display%3A400%7CPlayfair%20Display%3A700%2C700italic%7CBarlow%20Semi%20Condensed%3A400%2C400italic&display=swap">
+    
+    <meta property="og:title" content="My portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://badyss.fr">
+    <meta property="og:site_name" content="Badyss Azz">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:description" content="Parcours mon Portfolio ! Tu y trouvera mes projets, compétences et mes expériences !">
+    <meta property="og:image" content="https://badyss.fr/logos/head.png" >
+    <meta property="og:image:width" content="500" >
+    <meta property="og:image:height" content="500" >
+    
+    <title>Badyss AZZ - Web</title>
+</head>
+<body>
+    <nav>
+        <navbar>
+            <ul>
+                <a href="../index.html"><li>ACCEUIL</li></a>
+                <a class="dropdown">
+                    <div >
+                        <li>PARCOURS </li>
+                        <img src="../logos/angle.png">
+                        <ul class="dropdown-menu">
+                            <li onclick="redirect('../experiences')">Expériences</li>
+                            <li onclick="redirect('../competences')">Compétences</li>
+                            <li onclick="redirect('../projets')">Projets</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="../contact.html"><li>CONTACT</li></a>
+            </ul>
+        </navbar>
+    </nav>
+    <nav class="mobile-navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="mobile-menu">
+            <li><a href="../index.html">ACCEUIL</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">PARCOURS</a>
+                <ul class="dropdown-menu">
+                    <li onclick="redirect('../experiences')">Expériences</li>
+                    <li onclick="redirect('../competences')">Compétences</li>
+                    <li onclick="redirect('../projets')">Projets</li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="loader">
+        <span id="loading"></span>
+    </div>
+    <div class="partieparticle">
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+        <div class="particle"><img src="../logos/cyber.png"></div>
+    </div>
+    <section>
+        <a href="../competences.html"><button>Retour</button></a>
+    </section>
+    <main class="desktop">
+        <div class="animation">
+            <img src="../logos/devweb.png">
+            <div id="admin">
+                <span> Développement web</span>
+            </div>
+        </div>
+        <div class="logos">
+            <div>
+                <img src="../logos/html.png" id="img1">
+                <span class="text">
+                    <a href="">HTML</a> est un langage de balisage utilisé pour créer et structurer le contenu de pages webs.
+                    Chaque page web nécéssite du code HTML.
+                </span>
+                <img src="../logos/css.png"id="img2">
+                <span class="text">
+                    <a href="">CSS</a> est un langage  de style utilisé pour styliser les balises HTML.
+                    Il est souvent utilisé pour réaliser des animations tel que les logos que vous voyez en fond
+                </span>
+                <img src="../logos/javascript.png" id="img3">
+                <span class="text">
+                    <a href="">Javascript</a> est un langage de programmation de scripts principalement utilisé 
+                    côté client pour interagir dynamiquement avec le contenu des pages ou manipuler des données.
+                </span>
+                <img src="../logos/php.png" id="img5">
+                <span class="text">
+                    <a href="">PHP</a>  est un langage de script côté serveur, conçu pour le développement web,
+                    permettant d'exécuter des opérations sur le serveur, générer du contenu dynamique, et interagir avec des bases de données 
+                </span>
+            </div>
+        </div>
+    </main>
+    <main class="phone">
+        <div class="skills">
+            <div class="skill">
+                <div class="imgskill">
+                    <img src="../logos/css.png">
+                </div>
+                <h3>Front-End</h3>
+                <ul>
+                    <li><div class="oui"></div>Scripts d'automatisaiton systèmes</li>
+                    <li><div class="oui"></div>Scripts de gestions de fichiers et répertoires </li>
+                    <li><div class="oui"></div>Scripts de gestion de processus </li>
+                </ul>
+            </div>
+            <div class="skill">
+                <div class="imgskill">
+                    <img src="../logos/php.png">
+                </div>
+                <h3>Back-End</h3>
+                <ul>
+                    <li><div class="oui"></div>Créations de programme Scapy (Python) pour réaliser des attaques tel que l'ARP Poisonning, DNS Spoofing, Session Reset ou encore DDOS</li>
+                    <li><div class="oui"></div>Création de programmes permettant d'intéragir avec un utilisateur pour gérer des données</li>
+                    <li><div class="oui"></div>Analyse et traitement de données sous forme de fichier CSV/Tableau</li>
+                    <li><div class="oui"></div>Développement de mini-jeux</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 par <span>Badyss AZZOUZ</span></p>
+    </footer>
+</body>
+<script src="../css/java.js"></script>
+</html>
